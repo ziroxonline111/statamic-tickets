@@ -4,7 +4,7 @@
     "type": "statamic-addon",
     "license": "proprietary",
     "keywords": ["statamic", "statamic-addon", "tickets", "event tickets", "ticketing", "stripe", "stripe checkout", "qr code", "check-in", "eventbrite alternative", "rsvp"],
-    "homepage": "https://ziroxonline111.github.io/karelia-labs/products/karelia-tickets/",
+    "homepage": "https://karelialabs.com/platforms/statamic",
     "authors": [
         {
             "name": "Karelia Labs",
