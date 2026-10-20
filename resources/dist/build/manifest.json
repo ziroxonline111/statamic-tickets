@@ -6,7 +6,7 @@
     "isDynamicEntry": true
   },
   "node_modules/qr-scanner/qr-scanner.min.js": {
-    "file": "assets/qr-scanner.min-BC97ydBF.js",
+    "file": "assets/qr-scanner.min-Ce0Vaxbc.js",
     "name": "qr-scanner.min",
     "src": "node_modules/qr-scanner/qr-scanner.min.js",
     "isDynamicEntry": true,
@@ -23,7 +23,7 @@
     "isEntry": true
   },
   "resources/js/addon.js": {
-    "file": "assets/addon-CuPdYppe.js",
+    "file": "assets/addon-Dsqm1LRa.js",
     "name": "addon",
     "src": "resources/js/addon.js",
     "isEntry": true,

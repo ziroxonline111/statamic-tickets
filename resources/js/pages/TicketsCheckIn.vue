@@ -138,7 +138,7 @@ onBeforeUnmount(() => stopCamera());
         <template v-else>
             <p class="-mt-4 mb-4 text-sm text-gray-600 dark:text-gray-400">
                 <span v-if="event.date_label">{{ event.date_label }} · </span>
-                <Link :href="urls.index" class="hover:underline">{{ __('Other event') }}</Link>
+                <Link :href="urls.index" class="hover:underline">{{ __('Choose another event') }}</Link>
             </p>
 
             <div
@@ -156,8 +156,8 @@ onBeforeUnmount(() => stopCamera());
                     <template v-if="result.ticket">{{ result.ticket.type_name }} · <span class="font-mono tracking-wider">{{ result.ticket.code }}</span></template>
                 </div>
                 <div class="mt-2 text-base font-medium">
-                    {{ result.message }}
-                    <template v-if="result.result === 'already' && result.checked_in_at"> {{ __('at :time', { time: result.checked_in_at }) }}</template>
+                    <template v-if="result.result === 'already' && result.checked_in_at">{{ __('First checked in at :time.', { time: result.checked_in_at }) }}</template>
+                    <template v-else>{{ result.message }}</template>
                 </div>
                 <button
                     v-if="result.result === 'ok' && !result.undone"
