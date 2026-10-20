@@ -1,0 +1,25 @@
+@import "@statamic/cms/tailwind.css";
+
+@source "../js";
+
+/*
+ * Layout that must not lose to the Control Panel's own utility classes
+ * (its "hidden" and "grid-cols-1" would otherwise win over sm:/md: variants).
+ */
+.kt-stats { display: grid; gap: 1rem; grid-template-columns: minmax(0, 1fr); }
+.kt-stats-4 { display: grid; gap: 1rem; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.kt-wide { display: none; }
+.kt-video { aspect-ratio: 1; }
+
+@media (min-width: 40rem) {
+    .kt-stats { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .kt-video { aspect-ratio: 16 / 9; }
+}
+
+@media (min-width: 48rem) {
+    .kt-wide { display: table-cell; }
+}
+
+@media (min-width: 64rem) {
+    .kt-stats-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}

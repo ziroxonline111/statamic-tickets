@@ -1,0 +1,55 @@
+{
+    "name": "karelialabs/statamic-tickets",
+    "description": "Sell event tickets from Statamic with Stripe Checkout: ticket types, capacity, QR tickets by email, check-in on a phone, refunds and attendee lists. No per-ticket fees.",
+    "type": "statamic-addon",
+    "license": "proprietary",
+    "keywords": ["statamic", "statamic-addon", "tickets", "event tickets", "ticketing", "stripe", "stripe checkout", "qr code", "check-in", "eventbrite alternative", "rsvp"],
+    "homepage": "https://ziroxonline111.github.io/karelia-labs/products/karelia-tickets/",
+    "authors": [
+        {
+            "name": "Karelia Labs",
+            "homepage": "https://karelialabs.com"
+        }
+    ],
+    "support": {
+        "email": "support@karelialabs.atlassian.net",
+        "docs": "https://ziroxonline111.github.io/karelia-labs/products/karelia-tickets/docs/"
+    },
+    "autoload": {
+        "psr-4": {
+            "KareliaLabs\\Tickets\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "KareliaLabs\\Tickets\\Tests\\": "tests"
+        }
+    },
+    "require": {
+        "php": "^8.3",
+        "statamic/cms": "^6.20",
+        "chillerlan/php-qrcode": "^6.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^10.8 || ^11.0",
+        "phpunit/phpunit": "^11.0 || ^12.0"
+    },
+    "config": {
+        "allow-plugins": {
+            "pixelfear/composer-dist-plugin": true
+        }
+    },
+    "extra": {
+        "statamic": {
+            "name": "Karelia Tickets",
+            "description": "Sell event tickets with Stripe Checkout: ticket types, capacity, QR tickets by email, phone check-in and refunds. No per-ticket fees."
+        },
+        "laravel": {
+            "providers": [
+                "KareliaLabs\\Tickets\\ServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
