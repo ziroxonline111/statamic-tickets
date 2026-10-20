@@ -10,4 +10,4 @@ Karelia Tickets is commercial software. The full end user licence agreement is a
 4. **Updates.** A licence includes the updates published while it is active, as described on the Marketplace listing.
 5. **No warranty.** The software is provided "as is", without warranty of any kind. Karelia Labs is not liable for any claim, damages or other liability arising from its use. Keep backups of your site.
 
-Third-party code keeps its own licence: chillerlan/php-qrcode (MIT or Apache-2.0) and qr-scanner (MIT), which is bundled in the Control Panel assets.
+Third-party code keeps its own licence. See THIRD-PARTY-NOTICES.md.
