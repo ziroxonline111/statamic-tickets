@@ -174,7 +174,7 @@ php artisan vendor:publish --tag=statamic-tickets-config
 
 ## Support
 
-support@karelialabs.atlassian.net · Documentation: https://ziroxonline111.github.io/karelia-labs/products/karelia-tickets/docs/
+support@karelialabs.com · Documentation: https://ziroxonline111.github.io/karelia-labs/products/karelia-tickets/docs/
 
 ## Licence
 
